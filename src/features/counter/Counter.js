@@ -6,6 +6,7 @@ function Counter() {
     return (
         <div>
             <button className='button' aria-label='Decrement value' onClick={() => { setCount(count - 1) }}> - </button>
+            <span className='value'>Coin: {count}</span>
             <button className='button' aria-label='Increment value' onClick={() => { setCount(count + 1) }}> + </button>
         </div>
     )
