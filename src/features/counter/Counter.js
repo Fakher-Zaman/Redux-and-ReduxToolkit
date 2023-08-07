@@ -1,13 +1,13 @@
 import React from 'react';
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function Counter() {
-    const [count, setCount] = useState(0);
+    const count = useSelector((state) => state.counter.count);
     return (
         <div>
-            <button className='button' aria-label='Decrement value' onClick={() => { setCount(count - 1) }}> - </button>
+            <button className='button' aria-label='Decrement value' onClick={() => { }}> - </button>
             <span className='value'>Coin: {count}</span>
-            <button className='button' aria-label='Increment value' onClick={() => { setCount(count + 1) }}> + </button>
+            <button className='button' aria-label='Increment value' onClick={() => { }}> + </button>
         </div>
     )
 }
