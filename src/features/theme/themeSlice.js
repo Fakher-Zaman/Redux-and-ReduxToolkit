@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialStateValue = {
     color: "",
@@ -15,6 +15,6 @@ export const themeSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { changeTextColor } = themeSlice.actions
+export const { changeTextColor } = themeSlice.actions;
 
-export default themeSlice.reducer
+export default themeSlice.reducer;
