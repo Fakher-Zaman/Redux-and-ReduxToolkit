@@ -3,8 +3,11 @@ import { useSelector } from 'react-redux';
 
 const Coin = () => {
     const count = useSelector((state) => state.counter.count);
+    const themeTextColor = useSelector((state) => state.theme.color)
     return (
-        <span className='value'>Coin: {count}</span>
+        <div>
+            <span className="value" style={{ color: themeTextColor }}>Coin: {count}</span>
+        </div>
     )
 }
 
