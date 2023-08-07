@@ -7,7 +7,7 @@ function Counter() {
     const themeTextColor = useSelector((state) => state.theme.color);
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className='counter'>
             <button className='button' aria-label='Decrement value' onClick={() => { dispatch(decrement()) }}> - </button>
             <span className='value' style={{ color: themeTextColor }}>Count: {count}</span>
             <button className='button' aria-label='Increment value' onClick={() => { dispatch(increment()) }}> + </button>

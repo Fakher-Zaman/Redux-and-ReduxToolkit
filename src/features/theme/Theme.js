@@ -6,7 +6,7 @@ const Theme = () => {
     const [color, setColor] = useState("white");
     const dispatch = useDispatch();
     return (
-        <div>
+        <div className="theme">
             <input className="textbox" type="text" onChange={(e) => setColor(e.target.value)} />
             <button className="button" onClick={() => { dispatch(changeTextColor(color)) }}>Change Text Color</button>
         </div>

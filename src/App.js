@@ -6,7 +6,8 @@ import Theme from './features/theme/Theme';
 function App() {
   return (
     <div className="App">
-      <div className='edit'>
+      <h1>React Redux Toolkit</h1>
+      <div className='childs'>
         <Counter />
         <Coin />
       </div>

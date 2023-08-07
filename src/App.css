@@ -10,13 +10,22 @@
   color: white;
 }
 
-.edit {
+.childs,
+.theme {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
+}
+
+.counter,
+.theme {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -39,11 +48,17 @@
   font-size: 40px;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 .textbox {
   font-size: 32px;
   padding: 2px;
   margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 440px) {
+  .textbox {
+    width: 90%;
+  }
 }
